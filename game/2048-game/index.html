@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="src/built/main.css" />
+  <link rel="stylesheet" type="text/css" href="src/built/style.css" />
+  <link rel="stylesheet" href="login_style.css">
+
+
+  <link rel="icon" href="icon.png" type="image/x-icon" />
+
+  <style>
+    .login {
+      margin-top: 40px;
+      height: 360px;
+      width: 420px;
+      display: flex;
+      float: right;
+      justify-self: right;
+
+      background-color: #91a1d5;
+      background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="parent" style="display: flex; column-gap: 250px; ">
+    <div id="boardDiv" style="display: inline-flex;">
+
+    </div>
+
+    <div class="login">
+      <div class="l-form">
+        <form action="form_submit.php" method="POST" class="form">
+          <h1 class="form__title">Sign In</h1>
+
+          <div class="form__div">
+            <input type="text" class="form__input" name="Email" placeholder=" ">
+            <label for="" class="form__label">Email</label>
+          </div>
+
+          <div class="form__div">
+            <input type="password" class="form__input" name="Password" placeholder=" ">
+            <label for="" class="form__label">Password</label>
+          </div>
+
+          <input type="submit" class="form__button" value="Sign In">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://fb.me/react-15.0.1.min.js"></script>
+  <script src="https://fb.me/react-dom-15.0.1.min.js"></script>
+  <script type="text/javascript" src="src/built/board.js"></script>
+  <script type="text/javascript" src="src/built/index.js"></script>
+
+
+</body>
+
+</html>
